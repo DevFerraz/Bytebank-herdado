@@ -4,7 +4,7 @@ public class TesteGerente {
         katia.setCpf("496.841.968-06");
         katia.setSenha("GerenteKatia");
         katia.setNome("Katia Andrade");
-        katia.setSalario(6350.70);
-        System.out.println(katia.getBonificacao() + katia.getSalario());
+        katia.setSalario(6350);
+        System.out.println(katia.getBonificacao());
     }
 }
