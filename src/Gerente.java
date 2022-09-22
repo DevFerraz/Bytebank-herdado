@@ -1,19 +1,7 @@
 import java.util.Objects;
 
-public class Gerente extends Funcionario{
+public class Gerente extends Gerenciaveis{
     private String senha;
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public boolean confirma(String senha) {
-        return Objects.equals(this.senha, senha);
-    }
 
     public double getBonificacao() {
         return super.getSalario() + super.getBonificacao();
