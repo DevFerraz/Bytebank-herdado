@@ -1,17 +1,8 @@
 import java.util.Objects;
 
-public abstract class Gerenciaveis extends Funcionario {
-    private String senha;
+public abstract interface Gerenciaveis {
 
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
+    public abstract void setSenha(String senha);
 
-    public String getSenha() {
-        return senha;
-    }
-
-    public boolean confirma(String senha) {
-        return this.senha.equals(senha);
-    }
+    public abstract boolean confirma(String senha);
 }
