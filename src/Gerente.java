@@ -1,6 +1,4 @@
-import java.util.Objects;
-
-public class Gerente extends Funcionario implements Gerenciaveis{
+public class Gerente extends Funcionario implements Gerenciaveis {
     private String senha = "";
 
     public double getBonificacao() {

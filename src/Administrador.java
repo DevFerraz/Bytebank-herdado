@@ -1,4 +1,4 @@
-public class Administrador extends Funcionario implements Gerenciaveis{
+public class Administrador extends Funcionario implements Gerenciaveis {
     private String senha = "";
     @Override
     public double getBonificacao() {
