@@ -1,6 +1,5 @@
 public class SistemaInterno {
-public String senha;
-    public void autentica(Gerenciaveis ga) {
+    public void autentica(Gerenciaveis ga, String senha) {
         boolean autenticou = ga.confirma(senha);
         if (autenticou){
             System.out.println("Pode entrar no sistema");

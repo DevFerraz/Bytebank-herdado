@@ -6,17 +6,14 @@ public class TesteSistema {
         SistemaInterno si = new SistemaInterno();
 
         cliente.setSenha("Cadastro1");
-        System.out.println(cliente.confirma("cadastro1"));
 
         marco.setSenha("SenhaPadrão");
-        System.out.println(marco.confirma("SenhaPadrao"));
 
         sandro.setSenha("Bruto@#$");
-        System.out.println(sandro.confirma("Bruto@#$"));
 
-        si.autentica(marco);
-        si.autentica(sandro);
-        si.autentica(cliente);
+        si.autentica(marco, "SenhaPadrão");
+        si.autentica(sandro, "Bruto@#$");
+        si.autentica(cliente, "Cadastro1");
     }
 
 }
